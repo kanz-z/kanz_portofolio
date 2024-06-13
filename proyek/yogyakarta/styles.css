@@ -1,0 +1,156 @@
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+
+}
+
+article h2, article h3 {
+  color: #B38563;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #8a644a;
+  text-align: center;
+  font-weight: bold;
+}
+
+.foto {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid black;
+}
+
+.kota {
+  font-size: 20px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  background-image: url('img/malioboro.png');
+  background-size: cover;
+  z-index: 0;
+  background-position: center;
+  background-color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: antiquewhite;
+  flex: 1 0 300px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #8a644a;
+  padding: 5px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+aside {
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 0 0 20%;
+}
+
+.foto2 {
+  width: 50%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid black;
+}
+
+.foto2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+article {
+  flex: 1; /* mengisi ruang sisa secara merata */
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #8a644a;
+  flex: 1 0 300px;
+  color: rgb(255, 246, 200);
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+button:hover {
+  background-color: #45a049;
+}

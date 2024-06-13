@@ -1,0 +1,55 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px); /* Tambahkan aturan ini */
+    justify-content: center; /* Menengahkan grid secara horizontal */
+    align-content: center; /* Menengahkan grid secara vertikal */
+    grid-gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .status {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .cell.X {
+    background-color: rgba(255, 0, 0, 0.5); /* Merah dengan transparansi 50% */
+  }
+  
+  .cell.O {
+    background-color: rgba(0, 128, 0, 0.5); /* Hijau dengan transparansi 50% */
+  }
+  
