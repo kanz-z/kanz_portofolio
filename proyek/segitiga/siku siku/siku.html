@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga Siku-Siku</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Buat Segitiga Siku-Siku</h1>
+        <form id="triangleForm">
+            <label for="heightInput">Masukkan Tinggi <b>Segitiga:</b></label>
+            <input type="number" id="heightInput" name="heightInput" min="1" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="resultContainer">
+            <p id="placeholderText">[Hasil akan muncul di sini]</p>
+            <pre id="triangleResult"></pre>
+        </div>
+        <div class="checkbox-wrapper-35">
+            <input value="private" name="switch" id="switch" type="checkbox" class="switch" checked>
+            <label for="switch">
+                <span class="switch-x-text">This is  Segitiga</span>
+                <span class="switch-x-toggletext">
+                    <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>Piramida</span>
+                    <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>Siku-Siku</span>
+                </span>
+            </label>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
