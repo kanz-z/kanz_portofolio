@@ -26,12 +26,12 @@ form.addEventListener('submit', function(event) {
 });
 
 // Fungsi untuk membuat piramida bintang
-function generatePyramid(tinggi) {
+function generatePyramid(height) {
     let result = '';
     // Loop untuk setiap baris segitiga
-    for (let i = 1; i <= tinggi; i++) {
+    for (let i = 1; i <= height; i++) {
         // Menambahkan '*' sebanyak nomor baris saat ini
-        result += ' '.repeat(tinggi - i) + '* '.repeat(i) + '\n';
+        result += ' '.repeat(height - i) + '* '.repeat(i) + '\n';
     }
     return result;
 }
