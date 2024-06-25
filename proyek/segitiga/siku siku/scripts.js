@@ -31,7 +31,7 @@ function generateRightTriangle(height) {
     // Loop untuk setiap baris segitiga
     for (let i = 1; i <= height; i++) {
         // Menambahkan '*' sebanyak nomor baris saat ini
-        result += '*'.repeat(i) + '\n';
+        result += '* '.repeat(i) + '\n';
     }
     return result;
 }
