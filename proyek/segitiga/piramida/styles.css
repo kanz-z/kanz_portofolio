@@ -102,7 +102,7 @@ button:hover {
 
 /* Gaya untuk teks hasil */
 #pyramidResult {
-    text-align: center;
+    text-align: left;
     white-space: pre;
 }
 
