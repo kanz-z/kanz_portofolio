@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Stok</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard Stok</h1>
+    </header>
+    <main>
+        <section class="product-management">
+            <h2>Managemen Produk</h2>
+            <form id="product-form">
+                <label for="product-name">Nama Produk:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="product-category">Kategori Produk:</label>
+                <select id="product-category" required>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Books">Books</option>
+                    <option value="Clothing">Clothing</option>
+                </select>
+                
+                <label for="product-quantity">Jumlah Produk:</label>
+                <input type="number" id="product-quantity" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="product-list">
+            <h2>List Barang</h2>
+            <ul id="product-list"></ul>
+        </section>
+    </main>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('edit-modal')">&times;</span>
+            <h2>Edit Produk</h2>
+            <form id="edit-form">
+                <label for="edit-name">Nama Produk:</label>
+                <input type="text" id="edit-name" required>
+                
+                <label for="edit-category">Kategori Produk:</label>
+                <select id="edit-category" required>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Books">Books</option>
+                    <option value="Clothing">Clothing</option>
+                </select>
+                
+                <label for="edit-quantity">Jumlah Produk:</label>
+                <input type="number" id="edit-quantity" required>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('delete-modal')">&times;</span>
+            <h2>Yakin mau dihapus?</h2>
+            <button id="confirm-delete">Yes</button>
+            <button onclick="closeModal('delete-modal')">No</button>
+        </div>
+    </div>
+    <footer style="text-align: center;">
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
